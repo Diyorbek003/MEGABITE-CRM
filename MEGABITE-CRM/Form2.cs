@@ -10,30 +10,23 @@ using System.Windows.Forms;
 
 namespace MEGABITE_CRM
 {
-    public partial class signinform : Form
+    public partial class Form2 : Form
     {
-        public signinform()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void SignInForm_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            signupform obj = new signupform();
+            var obj = new signinform();
             this.Hide();
             obj.Show();
         }
 
-       
-
-        private void signupbutton_Click_1(object sender, EventArgs e)
+        private void signupbutton_Click(object sender, EventArgs e)
         {
-            var obj = new WelcomeForm();
+            var obj = new signinform();
             this.Hide();
             obj.Show();
         }

@@ -70,6 +70,7 @@
             this.signupbutton.TabIndex = 3;
             this.signupbutton.Text = "Sign Up";
             this.signupbutton.UseVisualStyleBackColor = true;
+            this.signupbutton.Click += new System.EventHandler(this.signupbutton_Click);
             // 
             // label1
             // 
@@ -82,7 +83,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(309, 516);
+            this.label2.Location = new System.Drawing.Point(309, 521);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 31);
             this.label2.TabIndex = 5;
@@ -150,6 +151,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "signupform";
             this.Text = "Sign Up";
+            this.Load += new System.EventHandler(this.signupform_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

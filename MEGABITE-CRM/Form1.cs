@@ -13,5 +13,17 @@ namespace MEGABITE_CRM
             this.Hide();
             obj.Show();   
         }
+
+        private void signupform_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signupbutton_Click(object sender, EventArgs e)
+        {
+            var obj = new WelcomeForm();
+            this.Hide();
+            obj.Show();
+        }
     }
 }
